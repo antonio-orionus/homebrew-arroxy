@@ -1,6 +1,6 @@
 cask "arroxy" do
-  version "0.2.4"
-  sha256 "792474c5dca4bef1bf54cabd36ccebd594e06f29cf7e9c6c780930c3bacd8fc2"
+  version "0.2.5"
+  sha256 "36b2a56c551d8263166be0adb2cd5887bbfa52d8c851e454704e6d70be597aca"
 
   url "https://github.com/antonio-orionus/Arroxy/releases/download/v#{version}/Arroxy-#{version}.dmg"
   name "Arroxy"
