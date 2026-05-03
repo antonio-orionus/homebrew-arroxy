@@ -1,8 +1,15 @@
 cask "arroxy" do
-  version "0.2.12"
-  sha256 "af26b5c0d4143c0e28531efe17c5b0a4ecb63ab1e98f4dc2c52658d8959ba09b"
+  version "0.2.13"
 
-  url "https://github.com/antonio-orionus/Arroxy/releases/download/v#{version}/Arroxy-#{version}.dmg"
+  on_arm do
+    sha256 "c233121fdcc86b43a5ece482928ae9f45ce67274d4381228011ab31b5d540aef"
+    url "https://github.com/antonio-orionus/Arroxy/releases/download/v#{version}/Arroxy-#{version}-arm64.dmg"
+  end
+  on_intel do
+    sha256 "a34fee2a06ceefd1a3a8d53110501a3e58ef1008d178a0229ef986670d5b75b7"
+    url "https://github.com/antonio-orionus/Arroxy/releases/download/v#{version}/Arroxy-#{version}-x64.dmg"
+  end
+
   name "Arroxy"
   desc "YouTube downloader"
   homepage "https://github.com/antonio-orionus/Arroxy"
