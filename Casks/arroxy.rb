@@ -1,12 +1,12 @@
 cask "arroxy" do
-  version "0.3.12"
+  version "0.3.13"
 
   on_arm do
-    sha256 "a84543c785df92dcfcd46bef4e0c5477562d649d1e760a864368321a05e8f1c1"
+    sha256 "ce68b83c7e2aad7d012c74e7f194aa3abc3aa64a0a42f07df54aab4750d41386"
     url "https://github.com/antonio-orionus/Arroxy/releases/download/v#{version}/Arroxy-mac-arm64.dmg"
   end
   on_intel do
-    sha256 "f0f6a8c212b91818c17726cceb2c524b9c0564133e32d8ef6b7a994ab1bdd102"
+    sha256 "46d4860744917e13be48b36b429585fc5f7875068ada9a3b8b605fd39e686d36"
     url "https://github.com/antonio-orionus/Arroxy/releases/download/v#{version}/Arroxy-mac-x64.dmg"
   end
 
