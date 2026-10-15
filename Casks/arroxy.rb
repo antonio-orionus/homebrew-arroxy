@@ -1,18 +1,23 @@
 cask "arroxy" do
-  version "0.4.25"
+  version "0.4.27"
 
   on_arm do
-    sha256 "6a3e2b44d56fca7cb5ec1ba9defa52de37d600f05380cef88d8fb572501c73f5"
+    sha256 "d5fa8a9cd000f470d996fcadb96d961b6f5f96fd5154326dbb33f86dd88d78d1"
     url "https://github.com/antonio-orionus/Arroxy/releases/download/v#{version}/Arroxy-mac-arm64.dmg"
   end
   on_intel do
-    sha256 "0a92e6a2eb7ce7ac2bbc295a5cbdc50eff0a286c7043032698d982089f28a2a1"
+    sha256 "6d311664b7ac52e6664c36cd6daf0aed6f0ddfb1902166581376baf63e48e7e7"
     url "https://github.com/antonio-orionus/Arroxy/releases/download/v#{version}/Arroxy-mac-x64.dmg"
   end
 
   name "Arroxy"
   desc "YouTube downloader"
   homepage "https://github.com/antonio-orionus/Arroxy"
+
+  # Electron 44 requires macOS 13; refuse the install on older
+  # systems instead of shipping an app that cannot launch. A bare
+  # symbol is a minimum; the ">= :x" string form is deprecated.
+  depends_on macos: :ventura
 
   app "Arroxy.app"
 
