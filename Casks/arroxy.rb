@@ -1,17 +1,17 @@
 cask "arroxy" do
-  version "0.7.1"
+  version "0.7.2"
 
   on_arm do
-    sha256 "6975e01511c570c559378ba175b4ce4e1db40f1073ffa7403205c918f85dd76c"
+    sha256 "3cb90faca750ca8f6cc89bb2e5319181810eff3e8e8e3b28852b73a206ca6ec4"
     url "https://github.com/antonio-orionus/Arroxy/releases/download/v#{version}/Arroxy-mac-arm64.dmg"
   end
   on_intel do
-    sha256 "4c9c5828753446e371b85d537ddb511b8054ef04224de421d6a5b2011d579862"
+    sha256 "ec8a5e430bfc1ca1d9894aabfea7a576de17f0017bf25ac6e609d718b8bed695"
     url "https://github.com/antonio-orionus/Arroxy/releases/download/v#{version}/Arroxy-mac-x64.dmg"
   end
 
   name "Arroxy"
-  desc "YouTube downloader"
+  desc "Video and audio downloader for YouTube and 2000+ other sites"
   homepage "https://github.com/antonio-orionus/Arroxy"
 
   # Electron 44 requires macOS 13; refuse the install on older
